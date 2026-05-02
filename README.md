@@ -17,7 +17,7 @@ https://taskflow-production-2a2c.up.railway.app/
 
 
 
----
+
 
 ## ✨ Features
 
@@ -160,35 +160,9 @@ npm run dev
 
 ---
 
-## 🚂 Railway Deployment (Backend)
 
-1. Push code to GitHub
-2. Go to Railway → New Project
-3. Select GitHub repo
-4. Set **Root Directory = backend**
 
-### Add environment variables:
 
-```
-MONGO_URI=your_mongodb_url
-JWT_SECRET=your_secret
-CLIENT_URL=https://your-frontend-url.vercel.app
-NODE_ENV=production
-```
-
----
-
-## 🌍 Frontend Deployment (Vercel)
-
-Set env:
-
-```
-VITE_API_URL=https://your-backend.up.railway.app/api
-```
-
-Deploy via Vercel dashboard or CLI.
-
----
 
 ## 🔗 API Base URL
 
@@ -214,7 +188,7 @@ bob@taskmanager.com
 Member@123
 ```
 
----
+
 
 
 ---
