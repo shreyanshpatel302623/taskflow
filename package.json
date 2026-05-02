@@ -1,14 +1,14 @@
 {
   "name": "taskflow-root",
   "version": "1.0.0",
-  "description": "Root package for TaskFlow deployment",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
   "scripts": {
-    "install-backend": "cd backend && npm install --no-audit --no-fund --quiet",
-    "install-frontend": "cd frontend && npm install --no-audit --no-fund --quiet",
-    "install-all": "npm run install-backend && npm run install-frontend",
-    "build-frontend": "cd frontend && npm run build",
-    "start": "cd backend && node server.js",
-    "build": "npm run install-all && npm run build-frontend"
+    "build": "npm install --include=dev && npm run build --workspace=frontend",
+    "start": "npm run start --workspace=backend"
   },
   "engines": {
     "node": ">=18.0.0"
