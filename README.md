@@ -228,7 +228,7 @@ Railway auto-detects `npm start`. Your `package.json` already has:
 ```
 
 ### Step 5: Get Your API URL
-Railway gives you a URL like: `https://task-backend-production.up.railway.app`
+Railway gives you a URL like: `https://task-backend-production.up.railway.app](https://taskflow-production-2a2c.up.railway.app/`
 
 ---
 
@@ -274,26 +274,12 @@ See [`API_DOCS.md`](./API_DOCS.md) for complete endpoint reference.
 
 ---
 
-## 🎬 Demo Script (2–5 min)
-
-1. **Open** the app at `http://localhost:5173`
-2. **Show Login page** → Click "Admin Demo" to fill credentials → Login
-3. **Dashboard** → Show stat cards (Total Tasks, Completed, Overdue, In Progress) + Pie Chart
-4. **Projects page** → Show project cards with member avatars and task counts
-5. **Create project** → Click "New Project", fill name, pick color, add members
-6. **Project Detail (Kanban)** → Show 3 columns (Todo / In Progress / Done)
-7. **Create a task** → Fill title, description, priority, due date, assignee
-8. **Update task status** → Click circle checkbox to cycle through statuses
-9. **My Tasks page** → Show filter by status/priority/overdue toggle
-10. **Admin → Users** → Show user table with roles, edit a user role, show deactivation
-11. **Logout** → Login as Member → Show restricted view (no admin features)
-12. **Show Signup** → First user = auto admin note
 
 ---
 
 ## 📬 Health Check
 
 ```
-GET https://your-backend.railway.app/health
+GET https://your-backend.railway.app/health](https://taskflow-production-2a2c.up.railway.app/
 ```
 Returns: `{ "status": "ok", "timestamp": "...", "environment": "production" }`
