@@ -10,7 +10,7 @@ COPY package*.json ./
 COPY . .
 
 # Install dependencies for the whole workspace
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 # Build the frontend
 RUN npm run build --workspace=frontend
