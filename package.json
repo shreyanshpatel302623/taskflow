@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Root package for TaskFlow deployment",
   "scripts": {
-    "install-backend": "cd backend && npm install",
-    "install-frontend": "cd frontend && npm install",
+    "install-backend": "cd backend && npm install --no-audit --no-fund --quiet",
+    "install-frontend": "cd frontend && npm install --no-audit --no-fund --quiet",
     "install-all": "npm run install-backend && npm run install-frontend",
     "build-frontend": "cd frontend && npm run build",
     "start": "cd backend && node server.js",
